@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -36,7 +36,7 @@ function App() {
         <Navbar />
         <Switch>
 
-        <Route exact path="/VaradPortfolio" render={()=>{
+        <Route exact path="/" render={()=>{
             return (
               <>
                   <div class="banner" style={{
