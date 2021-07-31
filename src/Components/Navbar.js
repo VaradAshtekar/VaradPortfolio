@@ -9,7 +9,7 @@ export default function Navbar() {
         <div>
             <nav className="navbar sticky-top navbar-expand-lg navbar-custom">
                 <div className="container-fluid">
-                <a href="/"><img src={logo} alt="" width="35" height="35"/></a>
+                <a href="./"><img src={logo} alt="" width="35" height="35"/></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" ></span>
                     </button>
@@ -17,7 +17,7 @@ export default function Navbar() {
 
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <a className="nav-link active" aria-current="page" href="./">Home</a>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/about">About Me</Link>
