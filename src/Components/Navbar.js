@@ -20,10 +20,10 @@ export default function Navbar() {
                                 <a className="nav-link active" aria-current="page" href="./">Home</a>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/about">About Me</Link>
+                                <Link className="nav-link" to="./about">About Me</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/contact">Contact</Link>
+                                <Link className="nav-link" to="./contact">Contact</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
