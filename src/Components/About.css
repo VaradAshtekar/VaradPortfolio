@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.photo{
+    width: 50%;
+}
+.content{
+    width: 50%;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    line-height: 45px;
+    padding: 10% 0 5% 0;
+}
+p{
+
+    color: white;
+}
+.degree, .institue, .year{
+    font-family: 'Roboto', sans-serif;
+}
+.degree{
+    font-size: 20px;
+    font-weight: 200;
+}
+.institute, .year{
+    font-size: 15px;
+    font-weight: normal;
+}
+.content h3{
+    color: #00FFF5;
+    font-size: 25px;
+    font-weight: 500;
+}
+.edu{
+    padding: 5% 0 2% 0;
+}
+
+.skillsetbox{
+    margin: 2% 0 0 0;
+}
+.skillsetbox img{
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(7%);
+}
+
+.progress-bar{
+    background-color: #00FFF5;
+
+}
+.progress{
+    border-radius: 0px;
+}
+.skill{
+    padding: 0 0 7% 0;
+}
+.responsibilities, .skills{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+.skillsetsec{
+    width: 50%;
+    padding: 0 5% 0 0;
+}
+.positions p{
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:768px){
+    
+    h2{
+      font-size: 25px;
+      line-height: 35px;
+      margin-top: 7%;
+      padding: 0 15% 0 0;
+    }
+    .intro, .responsibilities, .skills{
+        flex-direction: column;
+        width: 100%;
+    }
+    .content h2{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+        padding: 10% 0 5% 0;
+    }
+    .photo{
+        width: 90%;
+    }
+    .photo img{
+        padding: 5% 0 10% 0;
+        margin-left: 10%;
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        margin: 0 0 0 10%;
+        padding: 0 10% 0 0;
+    }
+    .degree{
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .institute, .year{
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+
+    .skills{
+        margin: 0 0 0 10%;
+    }
+    .skillsetsec{
+        width: 90%;
+    }
+  }

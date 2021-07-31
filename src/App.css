@@ -1,38 +1,205 @@
+
+@font-face {font-family: "Rotunda"; src: url("//db.onlinewebfonts.com/t/a1a94ed81c6d1fd4a325e41f00e9e39f.eot"); src: url("//db.onlinewebfonts.com/t/a1a94ed81c6d1fd4a325e41f00e9e39f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a1a94ed81c6d1fd4a325e41f00e9e39f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a1a94ed81c6d1fd4a325e41f00e9e39f.woff") format("woff"), url("//db.onlinewebfonts.com/t/a1a94ed81c6d1fd4a325e41f00e9e39f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a1a94ed81c6d1fd4a325e41f00e9e39f.svg#Rotunda") format("svg"); }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("//db.onlinewebfonts.com/c/19b8f54eb1f074fb01efb1c4f02e9623?family=AvertaStd-Regular");
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav{
+  padding: 0 10% 0 0;
+  margin: 0 0 0 7%;
+}
+.nav-link, ul.dropdown-menu li a{
+  font-family: 'AvertaStd-Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+
+}
+ul.dropdown-menu{
+  background-color:#393E46 ;
+}
+.navbar-custom{
+  background-color: #393E46;
+}
+.navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: white;
+            text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li.nav-item :hover{
+  border-bottom: 3px solid white;
+  color: white;
+  text-decoration: none;
+}
+.services{
+  margin-top: 5%;
+}
+.platforms{
+  margin-top: 5%;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  font-weight: 550;
+  line-height: 45px;
+  color: white;
+  padding: 2% 0 3% 0;
+}
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+}
+p{
+  font-family: 'Rotunda', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+body{
+  background: #1f2125;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.card{
+  margin: 0 5% 0 0;
+  border-radius: 0px;
+}
+.services .card-body{
+  color: white;
+  background-image: linear-gradient(rgba(255,0,0,0), #1f2125);
+}
+.description h2{
+   padding: 20% 0 5% 0;
+   font-size: 45px;
+   line-height: 55px;
+   color: white;
+   font-weight: 500;
+}
+.description h3{
+  padding: 0 0 5% 0;
+  font-size: 30px;
+  line-height: 40px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+.description{
+  margin-left: 10%;
+  padding-bottom: 10%;
+  padding-right: 45%;
+}
+.description p{
+  padding: 0 30% 5% 0;
+  
+}
+.calltoact{
+  background: linear-gradient(#00FFF5, #00ADB5);
+  border-radius: 0px;
+  color: #1f2125;
+  font-family: 'AvertaStd-Regular', sans-serif;
+  font-size: 20px;
+}
+.calltoact :hover{
+  padding: 3%;
+  background: linear-gradient(#00FFF5, #00ADB5);
+}
+.grp{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+}
+
+/* Service */
+.service{
+  display: flex;
+  flex-direction: row;
+}
+.service .calltoact{
+  font-size: 15px;
+  background: #00ADB5;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Footer */
+.footer{
+  text-align: center;
+  padding: 5% 0 5% 0;
+}
+.footer p{
+  font-weight: normal;
+
+}
+.platformname img{
+  margin: 0 1% 1% 0;
+}
+.smmedia img{
+  margin: 0 0 2% 2%;
+}
+.contactdetails i{
+  width: 10px;
+  height: 10px;
+}
+.contactdetails span{
+  margin: 0 5% 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Responsive*/
+@media screen and (max-width:768px){
+  .description h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+   }
+   .description p{
+    padding: 0 5% 5% 0;
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .calltoact{
+    font-size: 15px;
+  }
+  .description{
+    margin-left: 10%;
+    padding: 0 30% 5% 0;
+  }
+
+
+  .card{
+    margin: 0 5% 0 10%;
+    width: 18rem !important;
+  }
+  .grp{
+    flex-direction: column;
+  }
+
+  h2{
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 0 10%;
+  }
+  .platformname img{
+    margin: 2% 0 2% 10%;
+    width: 60px;
+    height: 60px;
+  }
+  .smmedia img{
+    margin: 0 0 5% 5%;
+    width: 30px;
+    height:30px;
+  }
+
+  .service{
+    flex-direction: column;
+  }
+  .service .calltoact{
+    font-size: 12px;
+   
+  }
+  .banner{
+    width: 100%;
   }
 }
