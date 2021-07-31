@@ -36,7 +36,7 @@ function App() {
         <Navbar />
         <Switch>
 
-        <Route exact path="/" render={()=>{
+        <Route exact path="/VaradPortfolio" render={()=>{
             return (
               <>
                   <div class="banner" style={{
