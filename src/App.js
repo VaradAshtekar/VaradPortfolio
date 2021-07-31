@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -32,7 +32,7 @@ function App() {
   return (
     <>
 
-      <Router>
+      <Router basename="/VaradPortfolio">
         <Navbar />
         <Switch>
 
